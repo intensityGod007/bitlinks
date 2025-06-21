@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main>
       <section className="grid grid-cols-2">
-        <div className="h-[50vh] bg-purple-100 flex flex-col justify-center items-center relative">
+        <div className="h-screen bg-purple-100 flex flex-col justify-center items-center relative">
           <p className={`text-3xl ${poppins.className}`}>The best URL shortner in the market</p>
           <p className="px-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam qui molestiae necessitatibus, mollitia aliquam nostrum nulla facere? Accusantium, molestias magni!</p>
           <div className='flex gap-3 pt-5 text-white'>
@@ -22,12 +22,13 @@ export default function Home() {
             <Link href='/github'><button className='bg-purple-400 rounded-lg shadow-lg font-bold px-3 py-1 cursor-pointer hover:bg-purple-300'>Github</button></Link>
           </div>
         </div>
-        <div className="h-[50vh] bg-purple-100 relative">
+        <div className="h-screen flex flex-col justify-center bg-purple-100">
           <Image
             className="mix-blend-darken"
             alt="vector image"
             src={'/vector.jpg'}
-            fill={true}
+            width={800}
+            height={300}
           />
         </div>
       </section>

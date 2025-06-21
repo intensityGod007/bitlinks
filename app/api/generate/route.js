@@ -3,7 +3,6 @@ import { NextResponse } from "next/server";
 
 export async function POST(request) {
     const body = await request.json();
-    console.log(body);
     
     const client = await clientPromise;
     const db = client.db("BitLinks");
